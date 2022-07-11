@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<form th:action="@{/login}" method="post">
+    <input name="username" type="text" placeholder="Username"
+           autofocus="true"/>
+    <input name="password" type="password" placeholder="Password"/>
+    <button type="submit">Log In</button>
+</form>
+<p><a href="/registration">Create an account</a></p>
+</body>
+</html>
